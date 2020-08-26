@@ -8,7 +8,7 @@ import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import colors from './styles/colors';
 
 import ComingSoon from './screens/ComingSoon';
-import Following from './screens/ComingSoon';
+import Following from './screens/Following';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
