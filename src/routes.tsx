@@ -14,7 +14,31 @@ const { Navigator, Screen } = createBottomTabNavigator();
 
 const Routes: React.FC = () => (
   <NavigationContainer>
-    <Navigator>
+    <Navigator
+      tabBarOptions={{
+        style: {
+          backgroundColor: colors.primary,
+          borderTopWidth: 0,
+          height: 60,
+        },
+        tabStyle: {
+          alignItems: 'center',
+          justifyContent: 'center',
+        },
+        iconStyle: {
+          flex: 0,
+          width: 20,
+          height: 20,
+        },
+        labelStyle: {
+          fontFamily: 'roboto_400',
+          fontSize: 11,
+          marginTop: 5,
+        },
+        inactiveTintColor: colors.black,
+        activeTintColor: colors.purple,
+      }}
+    >
       <Screen
         component={Following}
         name="Following"
