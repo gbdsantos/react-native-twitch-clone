@@ -5,6 +5,10 @@
 
   <img alt="Github language count" src="https://img.shields.io/github/languages/top/gbdsantos/react-native-twitch-clone">
 
+  <a href="https://expo.io/">
+    <img alt="Expo version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/react-native-twitch-clone/expo">
+  </a>  
+
   <a href="https://reactnative.dev/">
     <img alt="React Native version" src="https://img.shields.io/github/package-json/dependency-version/gbdsantos/react-native-twitch-clone/react-native">
   </a>
