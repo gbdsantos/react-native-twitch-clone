@@ -2,8 +2,10 @@ import React from 'react';
 import { FlatList, Text, View, } from 'react-native';
 
 import CategoryList from '../../components/CategoryList';
+import ChannelList from '../../components/ChannelList';
 import Header from '../../components/Header';
 import Heading from '../../components/Heading';
+import StreamList from '../../components/StreamList';
 import Title from '../../components/Title';
 
 import { Wrapper, Container, Main } from './styles';
@@ -24,11 +26,11 @@ const Following: React.FC = () => {
 
       {
         key: 'FOLLOWED_CATEGORIES',
-        render: () => <CategoryList />,
+        render: () => <Title>Followed Categories</Title>,
         isTitle: true,
       },
 
-      { key: 'C1', render: () => <View /> },
+      { key: 'C1', render: () => <CategoryList /> },
 
       {
         key: 'LIVE_CHANNELS',
@@ -36,11 +38,11 @@ const Following: React.FC = () => {
         isTitle: true,
       },
 
-      { key: 'C2', render: () => <View /> },
+      { key: 'C2', render: () => <StreamList /> },
 
       {
         key: 'CONTINUE_WATCHING',
-        render: () => <Title>Continue Watching</Title>,
+        render: () => <View />,
         isTitle: true,
       },
 
@@ -52,7 +54,7 @@ const Following: React.FC = () => {
         isTitle: true,
       },
 
-      { key: 'C4', render: () => <View /> },
+      { key: 'C4', render: () => <ChannelList /> },
     ];
 
     const indices: number[] = [];
