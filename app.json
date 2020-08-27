@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "TwitchTVClone",
-    "slug": "TwitchTVClone",
+    "name": "TwitchClone",
+    "slug": "TwitchClone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,6 +16,10 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "br.com.gbsantos.twitchclone",
+      "versionCode": 1
+    },
     "ios": {
       "supportsTablet": true
     },
